@@ -9,6 +9,9 @@
 * git status
 > Shows the current state of your working directory and staging area. It tells you which files are modified, staged, or untracked.
 
+* git diff
+> Shows the differences between the two files/which changes were made.
+
 * git config --global user.name "Kopano Sekonyela"
 * git config --global user.email kopanodrkk@icloud.com
 * git config --global init.default branch main
@@ -31,10 +34,49 @@
 * git push -u origin main
 > Uploads your committed changes from your local repository to the remote repository. This makes your updates available to others or to backup online.
 
+* git restore --staged index.html
+> removes file from staging, meaning this file won't get commited
+
+* git commit -a -m "updated index.html file"
+> This command skips the staging stage and goes straight to commit
+
+* git commit -m "updated Git README file" --amend
+> correct any spelling errors made in your previous commit message
+
+* git rm "index.html"
+> Physically deletes the file from your project
+
+* git restore "index.html"
+> Physically restores the file into your project
+
+* git mv "index.html" "landingPage.html"
+> Change the name of the file from index to landingPage
+
+* git log or git log --oneline
+> Shows all commits made
+
+* git log -p
+   + Press *q* to exit the logs
+> More detailed logs
+
+* git reset uuid
+> This is restore all your files to the state of the historical commit you made *(get the commit uuid from git log command)*
+
+* git gc
+> *git gc / git prune* does not remove normal files from your working directory.
+It removes unreachable Git objects stored inside the hidden .git/objects/ folder — usually from deleted branches, rebases, or resets.  
+>
+> These objects:  
+> + Are not tied to any current branch  
+> + Do not appear in git status  
+> + Are not visible as normal project files
+
 * .gitignore 
 > This tells git to ignore all files listed in the *.gitignore* file  
 > Good for ignoring sensitave data such as passwords  
 > Documentation: <https://github.com/github/gitignore>
+
+---
 
 ### Initial Git command at the beginning of a project
 

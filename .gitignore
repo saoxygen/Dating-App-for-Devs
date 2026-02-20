@@ -1,0 +1,51 @@
+# Dependencies (reinstallable)
+node_modules/
+
+# Build output (generated)
+dist/
+build/
+.out/
+.nest/
+.nest-cache/
+tmp/
+temp/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Runtime / uploads (project-specific)
+uploads/
+storage/
+
+# Test coverage (generated)
+coverage/
+
+# Environment variables (secrets)
+.env
+.env.*
+!.env.example
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE (Integrated Development Environment) / editor settings
+.vscode/
+.idea/
+*.swp
+
+# TypeScript (generated caches)
+*.tsbuildinfo
+
+# Optional: cache folders for tools
+.cache/
+.eslintcache
+
+# Optional: local database files
+*.sqlite
+*.sqlite3

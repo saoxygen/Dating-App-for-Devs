@@ -1,3 +1,5 @@
+<!-- This read me file contains all the information I used and learnt while building this project -->
+
 # Git Commands and Notes
 
 * git add . / git add -all / git add -A / git add *

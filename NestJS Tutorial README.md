@@ -48,6 +48,7 @@ It also automatically registers the controller inside `profiles.module.ts`
 > A controller decides what to do based on the request your API recieves, what functions to call and allowing your service layer to decide how to do it.
 
 ### Setting up Routes
+**These Decorators need to be imported before use**
 
 #### @Get()
 > `@Get()` handles HTTP GET requests.
@@ -61,3 +62,6 @@ It also automatically registers the controller inside `profiles.module.ts`
 > E.g: `http://localhost:3000/profiles?location=Durban`
 > `@Query('location')` tells Nest: “Extract the query parameter named location from the URL.” In this case it would `Durban`
 
+### @Param()
+> Extract route parameters from a request.  
+> `@Param('id')` gets the `id` from the URL (E.g. http://localhost:3000/profiles/5). Which is 5

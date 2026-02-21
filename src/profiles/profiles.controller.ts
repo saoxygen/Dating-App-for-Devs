@@ -1,12 +1,12 @@
-import { Controller, Get } from '@nestjs/common';
+import { Controller, Get, Query } from '@nestjs/common';
 
 @Controller('profiles')
 export class ProfilesController {
     // GET /profiles
 
     @Get()
-    findAll(){
-        return 'This action returns all profiles';
+    findAll(@Query('age') age: number) {
+        return [{age}];
     }
     // GET /profiles/:id
     // POST /profiles

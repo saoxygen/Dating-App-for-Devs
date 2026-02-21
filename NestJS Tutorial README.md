@@ -49,9 +49,15 @@ It also automatically registers the controller inside `profiles.module.ts`
 
 ### Setting up Routes
 
-#### @Get
+#### @Get()
 > `@Get()` handles HTTP GET requests.
 >
 >NestJS also provides `@Post()`, `@Put()`, `@Delete()`, `@Patch()`, etc., each mapping to the corresponding HTTP method.
 >
 >Example: `@Post()` handles creating data, `@Put()` updates data, and `@Delete()` removes data.
+
+### @Query()
+> Collects a parameter from the the **URL/API**  
+> E.g: `http://localhost:3000/profiles?location=Durban`
+> `@Query('location')` tells Nest: “Extract the query parameter named location from the URL.” In this case it would `Durban`
+

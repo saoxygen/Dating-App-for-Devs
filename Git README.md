@@ -70,6 +70,9 @@
 
 * git checkout -b feature-name
 > Creates a new branch called feature-name and immediately switches to it. This allows you to develop a feature in isolation from the main branch. It helps keep your main branch stable
+>
+> **Please note!**  
+> This is an older command, best practice is to use `git switch` or `git restore`
 
 * .gitignore 
 > This tells git to ignore all files listed in the *.gitignore* file  

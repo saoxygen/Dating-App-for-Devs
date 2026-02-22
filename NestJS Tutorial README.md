@@ -57,11 +57,26 @@ It also automatically registers the controller inside `profiles.module.ts`
 >
 >Example: `@Post()` handles creating data, `@Put()` updates data, and `@Delete()` removes data.
 
-### @Query()
+#### @Query()
 > Collects a parameter from the the **URL/API**  
 > E.g: `http://localhost:3000/profiles?location=Durban`
 > `@Query('location')` tells Nest: “Extract the query parameter named location from the URL.” In this case it would `Durban`
 
-### @Param()
+#### @Param()
 > Extract route parameters from a request.  
 > `@Param('id')` gets the `id` from the URL (E.g. http://localhost:3000/profiles/5). Which is 5
+
+#### @Body
+> `@Body()` extracts **JSON** data from the request body (usually sent in POST or PUT requests).
+
+#### Classes
+
+> classes can represent services, controllers, entities, utilities, etc.
+>
+>Main use cases: defining structured data (DTOs), creating business logic containers (services), modeling database tables (entities), and organizing app features (controllers/modules).
+
+So a class is just a blueprint
+
+#### Data Transfer Object (DTO)
+> A DTO `(Data Transfer Object)` is a special class used to define the shape of data being sent or received, mainly for validation and type safety.
+> DTOs ensure incoming request data matches expected structure before your logic runs.

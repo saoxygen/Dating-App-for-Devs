@@ -8,7 +8,7 @@ import { ProfilesService } from './profiles.service';
 @Controller('profiles')
 export class ProfilesController {
 
-    constructor(private profilesServices: ProfilesService) {}
+    constructor(private profilesServices: ProfilesService) { }
 
     // GET /profiles
 
@@ -26,16 +26,13 @@ export class ProfilesController {
     // POST /profiles
     @Post()
     create(@Body() createProfileDto: CreateProfileDto) {
-
-        return {
-            name: createProfileDto.name,
-            description: createProfileDto.description
-        };
+        return this.profilesServices.create(createProfileDto);
     }
+
     // PUT /profiles/:id
     @Put(':id')
-    update(@Body() updateProfileDto: UpdateProfileDto, 
-    @Param('id') id: string) {
+    update(@Body() updateProfileDto: UpdateProfileDto,
+        @Param('id') id: string) {
         return {
             id: id,
             name: updateProfileDto.name,

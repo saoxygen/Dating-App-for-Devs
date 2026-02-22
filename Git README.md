@@ -5,6 +5,12 @@
 * git add . / git add -all / git add -A / git add *
 > This tells git to keep track of all your files (you can use any one of the above commands to acheive this)
 
+* git add -u
+> Stage Modified and deleted files
+
+* git add -A
+> stage Modified, deleted and untracked files
+
 * git init
 > Initializes a new Git (Version Control System (VCS)) repository in the current folder. It creates a hidden .git directory that starts tracking changes in the project.
 

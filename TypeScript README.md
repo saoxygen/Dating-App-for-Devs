@@ -18,3 +18,8 @@ Each variable must be assigned a type, E.g. name is type string shown as `let na
         }
 
 The variable passed into the greet function is assign as string, show as `function greet(user: string)`.
+
+#### Types
+
+* :void
+> Use type void if your function doesn't return anything

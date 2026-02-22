@@ -98,6 +98,13 @@ So a class is just a blueprint
 
 * ProfileService
 > **ProfileService** – Contains the business logic (e.g., create profile, fetch profiles, update profile) and is used by the controller.
+> 
+> Access the profiles Service from your controller via:  
+> `constructor(private profilesServices: ProfilesService) {}`  
+> Call the findAll function in your service from the controller  
+> `this.profilesServices.findAll()`
+>
+> **`this`** is used because profilesService is a property of the **class**, not a global variable.
 
 * Injectable
 
